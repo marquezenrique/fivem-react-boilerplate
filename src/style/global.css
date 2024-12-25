@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --main-color: 0,0,0
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  overflow: hidden;
+  user-select: none;
+  box-sizing: border-box;
+  border: none;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  transition: all ease 0.25s;
+}
