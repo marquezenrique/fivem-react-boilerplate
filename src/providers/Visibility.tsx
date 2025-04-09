@@ -1,10 +1,9 @@
 import React, { createContext, useEffect, useState } from "react";
+import { cn, isEnvBrowser } from "@/utils/misc";
 
 import { AnimationProvider } from "./Animation";
 import { NuiVisibilityFrame } from "@/types";
 import { Post } from "@/hooks/post";
-import clsx from "clsx";
-import { isEnvBrowser } from "@/utils/misc";
 import { listen } from "@/hooks/listen";
 import { observe } from "@/hooks/observe";
 
@@ -39,7 +38,7 @@ export const VisibilityProvider = ({
     >
       <AnimationProvider show={visible}>
         <div
-          className={clsx("h-screen", {
+          className={cn("h-screen", {
             "bg-slate-800": isEnvBrowser(),
           })}
         >
